@@ -1,0 +1,31 @@
+.app {
+    display: grid;
+    grid-template-rows: 180px auto;
+}
+
+
+
+
+/* Default layout (for desktop) */
+.task_column {
+    width: 33.33%;
+    margin: 10px;
+}
+
+/* Main layout container */
+.app_main {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 5%;
+}
+
+/* Responsive styles for mobile screens */
+@media (max-width: 600px) {
+    .app_main {
+        display: block;
+    }
+
+    .task_column {
+        margin-bottom: 20px;
+    }
+}
